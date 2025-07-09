@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.list-items {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: 600px;
+    color: black;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.home-content {
+    padding: 80px;
+    margin-left: 30px;
+}
+
+#username{
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.last-name {
+    font-family: "Dancing Script", cursive;
+    color: green;
+}
+
+.user-details {
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.download {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+.home-img {
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+.group1 {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1.5s, left 1.5s;
+}
+
+.home-img:hover #blob{
+    bottom: 70px;
+}
+
+.home-img:hover #girl {
+    left: 40%;
+}
+
+#about {
+    margin: 22% 8% 0 8%;
+}
+
+.section-head {
+    text-align: center;
+}
+
+.main-head {
+    font-size: 30px;
+}
+
+.sub-head {
+    font-size: 20px;
+    color: blue;
+}
+
+.section-body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10%;
+}
+
+.about-content {
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.information {
+    margin-top: 1.3rem;
+}
+
+.info {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.info span  {
+    margin-left: 1rem;
+}
+
+#skills {
+    margin: 10% 8% 0 8%;
+}
+
+.skill-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 18%;
+    margin-top: 1.5rem;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.bar-head, .bar-percent {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.progressbar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#progress1 {
+    background-color: rgb(4, 226, 4);
+    width: 92%;
+}
+
+#progress2 {
+    background-color: rgb(4, 226, 4);
+    width: 80%;
+}
+
+#progress3 {
+    background-color: rgb(4, 226, 4);
+    width: 88%;
+}
+
+#progress4 {
+    background-color: rgb(4, 226, 4);
+    width: 78%;
+}
+
+#contact{
+    margin: 8% 8% 0 8% ;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.icons {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    /* background-color: rgb(4, 226, 4); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+}
+
+.brands {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.icons:hover{
+    background-image: linear-gradient(to bottom right,blue,black, green);
+    transform: rotate(45deg);
+}
+
+.icons:hover .brands{
+    color: white;
+    animation: rotation 1.5s ease;
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+footer {
+    margin-top: 8%;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 600;
+}
+
+.up-arrow {
+    float: right;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: bisque;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(15, 193, 15, 0.499);
+    border-radius: 10px;
+}
